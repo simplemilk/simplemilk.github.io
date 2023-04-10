@@ -23,9 +23,9 @@ filename: Contact.md
 </div>
 	<nav class="fluid nav_ul" style="text-align: center" >
 		<a href="index.html"> Index </a> - 
-		<a href="about.md"> About Me </a> - 
-		<a href="Services.md"> Services </a> -
-		<a href="Contact.md"> Contact </a>
+		<a href="about.html"> About Me </a> - 
+		<a href="Services.html"> Services </a> -
+		<a href="Contact.html"> Contact </a>
 	</nav>
 <div class="fluid intro_paragraph">
 	<img src="assets/forms-concept-illustration.jpg" alt="forms image" width="335" height="209" class= "img">
