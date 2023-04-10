@@ -17,9 +17,9 @@
 	</div>
 <nav class="fluid nav_ul" style="text-align: center">
 		<a href="Index.html">Index</a> -
-		<a href="About_Me.html">About Me</a> - 
-		<a href="Services.html">Services</a> -
-		<a href="Contact.html">Contact</a> 
+		<a href="About_Me.md">About Me</a> - 
+		<a href="Services.md">Services</a> -
+		<a href="Contact.md">Contact</a> 
 	</nav>
 <body>
 <div id="content" class="fluid">
