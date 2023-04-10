@@ -18,15 +18,15 @@
 	<a href="index.html">
 	<em><strong>Index </strong></em></a><em><strong> 
 		- 
-	    <a href="about.html">
+	    <a href="about.md">
 		About Me
 	    </a> 
 		- 
-	    <a href="Services.html">
+	    <a href="Services.md">
 		Services
 		</a>
 		-
-		<a href="Contact.html">
+		<a href="Contact.md">
 		Contact
 	    </a></strong></em>
 </nav>
