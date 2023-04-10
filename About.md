@@ -1,3 +1,8 @@
+---
+title: About
+layout: template
+filename: About.md
+--- 
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
