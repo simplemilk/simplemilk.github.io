@@ -18,9 +18,9 @@
 </div>
 	<nav class="fluid nav_ul" style="text-align: center" >
 		<a href="index.html"> Index </a> - 
-		<a href="about.html"> About Me </a> - 
-		<a href="Services.html"> Services </a> -
-		<a href="Contact.html"> Contact </a>
+		<a href="about.md"> About Me </a> - 
+		<a href="Services.md"> Services </a> -
+		<a href="Contact.md"> Contact </a>
 	</nav>
 <div class="fluid intro_paragraph">
 	<img src="assets/forms-concept-illustration.jpg" alt="forms image" width="335" height="209" class= "img">
@@ -59,7 +59,7 @@
 </div>
 <div class="fluid footer_div" style="text-align: center">
 	<span class="small_text">
-		Copyright 2013<br> 
+		Copyright 2023<br> 
 		Last updated on February 19, 2023
 	</span>
 </div>
