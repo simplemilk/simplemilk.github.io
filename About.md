@@ -1,7 +1,7 @@
 ---
 title: About
 layout: template
-filename: About.md
+filename: About.html
 --- 
 <!doctype html>
 <html lang="en">
@@ -23,15 +23,15 @@ filename: About.md
 	<a href="index.html">
 	<em><strong>Index </strong></em></a><em><strong> 
 		- 
-	    <a href="About.md">
+	    <a href="About.html">
 		About Me
 	    </a> 
 		- 
-	    <a href="Services.md">
+	    <a href="Services.html">
 		Services
 		</a>
 		-
-		<a href="Contact.md">
+		<a href="Contact.html">
 		Contact
 	    </a></strong></em>
 </nav>
