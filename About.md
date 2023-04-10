@@ -18,7 +18,7 @@
 	<a href="index.html">
 	<em><strong>Index </strong></em></a><em><strong> 
 		- 
-	    <a href="about.md">
+	    <a href="About.md">
 		About Me
 	    </a> 
 		- 
