@@ -1,3 +1,8 @@
+---
+title: Contact
+layout: template
+filename: Contact.md
+--- 
 <!doctype html>
 <html lang="en">
 <head>
