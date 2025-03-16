@@ -1,0 +1,245 @@
+/* General */
+body {
+
+    color: #2D3A2E;
+    background-color: #F3F7F2;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+
+}
+
+h1,h2,h3 {
+    font-family: 'Playful Display', serif;
+    color: #2D4C3B;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 20%;
+    height: 80%;
+}
+
+figcaption {
+    font-family: 'Lora', serif;
+    color: #2D4C3B;
+    font-weight: italic;
+    text-align: center;
+}
+/* Header specific */
+header {
+    background-color: #A0C293;
+    color: #2D4C3B;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav a {
+
+    text-decoration: none;
+    color: #2D4C3B;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+
+}
+
+nav nav a:hover {
+    background-color: #B8D1AE;
+    color: #2D4C3B;
+}
+
+/* Main */
+main {
+    padding: 40px;
+    text-align: left;
+}
+
+main p {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    color: #3E5F41;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main li {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: #3E5F41;
+    max-width: 800px;
+}
+ul, ol {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: auto;
+    padding: 10px 20px;
+    background-color: #E7F0E4;
+    border-radius: 8px;
+}
+
+ul li, ol li {
+    padding: 5px 0;
+    color: #2D4C3B;
+}
+
+/* Footer */
+footer {
+    color: #4F6959;
+    background-color: #DBE8D7;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #2D4C3B;
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    color: #A0C293;
+}
+
+/* Under construction - Website page sizes
+@media screen and (max-width: 576px) {
+    header {
+        padding: 15px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+
+    }
+
+    main p {
+
+    }
+
+    ul, ol {
+
+    }
+
+    footer {
+
+    }
+
+    footer nav {
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+
+    }
+
+    header nav {
+
+    }
+
+    main {
+
+    }
+
+    main p {
+
+    }
+
+    ul, ol {
+
+    }
+
+    footer {
+
+    }
+
+    footer nav {
+        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+
+    }
+
+    header nav {
+
+    }
+
+    main {
+
+    }
+
+    main p {
+
+    }
+
+    ul, ol {
+
+    }
+
+    footer {
+
+    }
+
+    footer nav {
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+
+    }
+
+    header nav {
+
+    }
+
+    main {
+
+    }
+
+    main p {
+
+    }
+
+    ul, ol {
+
+    }
+
+    footer {
+
+    }
+
+    footer nav {
+        
+    }
+}
+
+*/
