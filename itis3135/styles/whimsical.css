@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+@font-face {
+    font-family: 'HaruKaze';
+    src: url('./whimsical_fonts/Harukaze.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, header {
+    font-family: 'HaruKaze', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    font-color: 
+}
+
+h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #333;
+    background-color: #CC232A;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color:#FFD548;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    color: #F5AC27;
+}
+
+/* Main */
+main header {
+    font-family: 'Harukaze', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #FFD548;
+    text-align: center;
+}
+
+main p {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+button, nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
