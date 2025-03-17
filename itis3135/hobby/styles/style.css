@@ -1,0 +1,186 @@
+/* General Webpages */
+
+body {
+    background-color: #ECE9D2;
+    color: #8B5A2B;
+    font-family: Sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: ivory;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav {
+    text-align: center;
+    background-color: ivory;
+    padding: 2rem;
+}
+
+nav a {
+    color: #8B5A2B;
+    text-decoration: none;
+    padding: 1rem 1.25rem;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+nav a:hover, footer a:hover {
+    color: #779ECB;
+}
+
+main {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: ivory;
+    border-radius: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section a {
+    color: #F4A460;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #779ECB;
+}
+
+h1 {
+    text-align: center;
+    color: #4B3621;
+}
+
+h2, h3 {
+    color: #4B3621;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+h4 {
+    color:#8B5A2B;
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    display: inline;
+}
+
+li {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+footer {
+    background-color: ivory;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #8B5A2B;
+    text-decoration: none;
+    padding: 1rem 1.25rem;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure >img {
+    max-width: 50%;
+    max-height: 60%;
+    border-radius: 1rem;
+}
+
+div {
+    display: grid;
+}
+
+figcaption {
+    font-style: italic;
+    color: #8B5A2B;
+}
+
+/* Form */
+#contact {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: ivory;
+    border-radius: 1rem;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 0.5rem;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8B5A2B;
+}
+
+input, textarea {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    border-radius:0.5rem;
+    font-size:1.2rem;
+}
+
+textarea {
+    height: 4rem;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #885A2B;
+    color:white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor:pointer;
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.logocontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.squarelogo {
+    width: 75%;
+    max-width: 3rem;
+    height: auto;
+}
+
+.reclogo{
+    width: 75%;
+    max-width: 5rem;
+    height: auto;
+}
+
+p a {
+    color: #4B3621;
+}
