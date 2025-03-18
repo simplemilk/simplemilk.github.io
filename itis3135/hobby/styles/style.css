@@ -6,10 +6,12 @@ body {
     font-family: Sans-serif;
     margin: 0;
     padding: 0;
+    text-align:center;
 }
 
 header {
     background-color: ivory;
+    font-size: 1.8rem;
     text-align: center;
     padding: 2rem;
 }
@@ -17,27 +19,39 @@ header {
 nav {
     text-align: center;
     background-color: ivory;
-    padding: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+    gap: 1.5rem;
 }
 
 nav a {
     color: #8B5A2B;
     text-decoration: none;
-    padding: 1rem 1.25rem;
+    padding: 0.75rem 1rem;
     display: inline-block;
     font-size: 1.2rem;
+    border-radius: 0.5rem;
 }
 
 nav a:hover, footer a:hover {
     color: #779ECB;
 }
 
+/* Body */
+
 main {
+    background-color: ivory;
+    color:#4B3621;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.container {
     max-width: 50rem;
     margin: 2rem auto;
-    padding: 2rem;
-    background-color: ivory;
     border-radius: 1rem;
+    text-align: left;
+    background-color:ivory;
 }
 
 section {
@@ -53,33 +67,48 @@ section a:hover {
     color: #779ECB;
 }
 
+/* Headers */ 
 h1 {
     text-align: center;
     color: #4B3621;
 }
 
-h2, h3 {
+h2 {
     color: #4B3621;
     font-size: 1.8rem;
+    text-align: center;
+}
+
+h3 {
+    color:#4B3621;
+    font-size: 1.3rem;
     text-align: left;
 }
 
 h4 {
     color:#8B5A2B;
     font-size: 1.3rem;
+    text-align: center;
 }
 
+/* Main Paragraphs */
 p {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     display: inline;
+}
+
+p a {
+    color: #4B3621;
 }
 
 li {
     font-size: 1.2rem;
     line-height: 1.2;
 }
+
+/* Footer */
 footer {
     background-color: ivory;
     text-align: center;
@@ -95,15 +124,17 @@ footer a {
     font-size: 1.2rem;
 }
 
+/* Images */
 figure {
     text-align: center;
     margin: 0;
 }
 
-figure > img {
-    max-width: 50%;
-    max-height: 60%;
-    border-radius: 1rem;
+img {
+    max-width: 100%;
+    width: 20rem;
+    max-height: 100%;
+    height: auto;
 }
 
 div {
@@ -113,6 +144,7 @@ div {
 figcaption {
     font-style: italic;
     color: #8B5A2B;
+    padding: 1rem;
 }
 
 /* Form */
@@ -161,6 +193,7 @@ input[type="submit"] {
     width: 40%;
 }
 
+/* Logos */
 .logocontainer {
     display: flex;
     justify-content: space-evenly;
@@ -181,6 +214,15 @@ input[type="submit"] {
     height: auto;
 }
 
-p a {
-    color: #4B3621;
+/* Hiding pages */
+.content {
+    display: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 50rem auto;
+}
+
+.content:target {
+    display:block;
 }
