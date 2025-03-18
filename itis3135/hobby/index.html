@@ -15,31 +15,57 @@
             <h1>Jolly Panda's K-RnB</h1>
             <hr>
             <nav>
-                <a href="./who.html">Who?</a>
+                <a href="#who">Who?</a>
                 &#127925;
-                <a href="./when.html">When?</a>
+                <a href="#what">What</a>
                 &#127925;
-                <a href="./where.html">Where?</a>
+                <a href="#where">Where?</a>
                 &#127925;
-                <a href="./how.html">How?</a>
+                <a href="#when">When?</a>
                 &#127925;
-                <a href="./why.html">Why?</a>
+                <a href="#why">Why?</a>
+                &#127925;
+                <a href="#how">How?</a>
+                &#127925;
             </nav>
             <hr>
         </header>
     </nav>   
-    <main>
-        <section id="heading">            
-            <h2><strong>What</strong> is this site about?</h2>
+
+        <section id="who" class="who">
+            <h2>Who am I?</h2>
             <hr>
-        </section>
+
+            <figure>
+                <img src="./images/whoami.jpeg">
+                <figcaption>Hello, this is me in a Santa Hat during a Christmas Cantata!</figcaption>
+            </figure>    
+        
+            <br><p>Hello! My name is Jonathan Park and I'm just a student that is interested in KRnB music.</p>
+            <p>I have been playing piano for a long time and later ended up joining the choir for the good chunk of college.</p>
+            <p>My current favorite artist right now is <a href="https://open.spotify.com/artist/2l8mENYuyXlnqdjSrsSLq6?si=fs2L6c6bTc-ywvhiigDkNQ">HAAN</a>.</p>
+
+        <form id="contact">
+            <p>If you are interested in talking to me please fill out the form below! And we can keep in touch!</p><br><br>
+            <label for="name">Name: </label><br>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">Email: </label><br>
+            <input type="email" name="email" id="email" required><br><br>
+            <label>Message Me!</label><br>
+            <textarea name="textbox" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+
+        <section id="what" class="what">            
+            <h2>What is this site about?</h2>
+            <hr>
         
         <figure>
             <img src="images/index_image.jpg" alt="Stock Singer">
             <figcaption>KRnB singer doing a live concert in a bar.</figcaption>
         </figure>
 
-        <section id="passage">
             <p>This site is a general hobby page looking into my personal interests in Korean Rhythmn and Blues (K-RnB).</p>
             <p>When listening to artists in this genre, there are a couple of <strong>factors</strong> to consider when looking for an artist:</p>
 
@@ -51,13 +77,6 @@
                 <li>Lyrics</li>
             </ol>
 
-            <p>Based on these factors you can end up figuring out what kind of artists would fit that if your vibe such as the ones below:</p>
-        </section>
-        <br>
-        
-        <section id="artists">
-            <h3>Recommendations</h3>
-            <hr>
             <p>Here are some artist recommendations I would listen to:</p>
             
             <h4>Dean (Vocal powerhouse)</h4>
@@ -72,24 +91,161 @@
             <h4>DPR LIVE (Experimental and Unique) </h4>
             <p>One of the most influential artists in the electronic music scene with the incorporation of psychadellic sounds and melodic rap with songs such as <a href="https://www.youtube.com/watch?v=72Brvws-nPc" target="_blank">Geronimo!</a> and <a href="https://www.youtube.com/watch?v=Jg9NbDizoPM" target="_blank">Jasmine</a>.</p>
         </section>
+        <hr>
+        <section id="when" class="when">
+            <h2>When are the KRnB concerts?</h2>
+            <hr>
 
-    </main>
-    <script src="scripts/scripts.js"></script>
-<footer>
-    <hr>
+            <figure>
+                <img src="./images/concert.png">
+                <figcaption>Image of a concert </figcaption>
+            </figure>
+
+            <h3>The difficulty of booking a concert</h3>
+            <p>Generally for other genres of music, specifically KPop, it is pretty easy to find concert dates due to its immense popularity.</p>
+            <p>Thus, it can be hard to find a concret date especially for specific artists (Looking at you DEAN) making it hard to know when they are avaiable.</p>
+            <p>The other issue is that most of the concerts are generally in Korea so there is likely less artists willing to go out to have a concert in the US.</p>
+            <p>When it comes to mainstream artists, it should be easier to find them using TicketMaster, KPlay, and SeatGeeks.</p>
+
+            <div class="logocontainer">
+                <figure>
+                    <a href="https://www.kplayfest.com/kpop-concert-calendar"><img src="./images/kplay.png" class="squarelogo"></a><!--https://www.kplayfest.com -->
+                    <figcaption>KPlay</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.ticketmaster.com/discover/concerts?classificationId=KnvZfZ7vAvl"><img src="./images/ticketmaster.png" class="reclogo"></a> <!--httpsL//www.ticketmaster.com-->
+                    <figcaption>Ticketmaster</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://seatgeek.com/concert-tickets"><img src="./images/seatgeek.png" class="squarelogo"></a> <!--https://www.seatgeaks.com-->
+                    <figcaption>SeatGeeks</figcaption>
+                </figure>
+            </div>
+        </section>
+        <hr>
+
+        <section id="where" class="where">
+            <h2>Where was the inspiration for KRnB?</h2>
+        <hr>
+
+        <figure>
+            <img src="./images/singer.png">
+            <figcaption>AI Generated RnB Singer from the 80's</figcaption>
+        </figure>
+
+            <h3>From the West to the East</h3>
+            <p>In the start of the '40s, Korean music was mostly dominated from genres heavily inspired from their neighbors.
+            <p>Thus, music genres such as trot, the Korean version of the Japanese enka, and pansori, Korean storytelling opera which was inspired from Chinese opera, was dominating the music scene.</p>
+            <p>However, after the rise of popularity of R&B and Pop, it slowly started to get introduced into the US as well as Koreans producing their own interpretations of the genres in the form of KRnB and KPop.</p>
+            <p>From the first exposure of the native version of these songs through Seo Taeji and The Boys in the '90s, KRnB and KPop have become an interest in Korea</p>
+        <hr>
+        
+        <figure>
+            <img src="./images/kpopgroup.png">
+            <figcaption>AI Generated early 00's Kpop Groups</figcaption>
+        </figure>
+
+            <h3>The Rise of Boy and Girl Bands</h3>
+            <p>After the success of Seo Taeji and the Boys, several artists started to emerge pursuing these music ventures.</p> 
+            <p>Artists like Jin Young Park (JYP) and Yang Shin Hyuk (YG), an ex-member of Seo Taeji, started to form their own entertainment companies after the initial boom of the genre.</p>
+            <p>At this time period, a lot of boy groups and girl groups started to emerge where groups such as HOT, G.O.D, Sechskies, and S.E.S dominated the market.</p>
+            <p>Thus overtime they started to develop their own sounds where it incorporated a mixture of several genres such as Pop, Ballads, and RnB.</p>
+        </section>
+        <hr>
+
+        <figure>
+            <img src="./images/underground.png">
+            <figcaption>AI Generated image of Korean Underground artists</figcaption>
+        </figure>
+
+            <h3>The Emergence of the Underground</h3>
+            <p>After the success of these entertainment groups, several artists have started to emerge that didn't want to join the bigger entertainment companies.</p>
+            <p>Due to their intense training and their strict regimes, trainees who were not able to make it into these companies ended up starting their own ventures.</p>
+            <p>Thus, several other artist such as Tiger JK, Insooni, and YoonmiRae has emerged as well where a new age and genre of music emerged.</p> 
+            <p>KHipHop, KRap and KR&B has started to develop further from these underground artists.</p>
+        <hr>
+
+            <h3>Modern Day</h3>
+            <p>Nowadays there are a lot more artists that have been released and popularized in the underground that later became mainstream artists.</p>
+            <p>Such examples include Crush, DEAN, Hoody, and BIBI.</p>
+            <p>The genre now is striving as they release more and more artists, it can get overwhelming trying to figure out which artist is worth listening to.</p>
+            <p>Thus there is a <a href="./index.html">page</a> to help introduce visitors on some artists to listen to.</p>
+        </section>
+        <hr>
+
+        <section id="why" class="why">
+            <h2>Why should you listen to KRnB?</h2>
+            <hr>
+            <figure>
+                <img src="./images/thinking.png">
+                <figcaption>KPop artist thinking</figcaption>
+            </figure>
+                <p>KRnB is versatile, although it seems like one genre there is a lot of different kinds of artists in this umbrella.</p>
+                <p>Nowadays, there's a lot of different types of artists due to the amount of newer uprising artists constantly popping up in the scene.</p>
+                <p>As mentioned prior, there are people like DEAN that sing mainstream RnB music, DPR Live that plays EDM music, and Hoody that sings chill RnB.</p>
+                <p>Though it can be overwhelming at first, there are some artists that can be of interest in the <a href="./index.html">what page</a> as well as if you have any questions you can ask them in the <a href="./who.html">who page</a>.</p>
+          </section>
+
+        <section id="how" class="how">
+        <h2>How much money do you need to invest in the hobby?</h2>
+        <hr>
+        
+        <figure>
+            <img src="./images/looking.png">
+            <figcaption>Hobbyist that is looking for music vinyls.</figcaption>
+        </figure>
+            <p>Thankfully, to listen to songs it is free!</p>
+            <p>The only issue is that if you want to buy albums can be hard as some of the artists are not that popular.</p>
+            <p>The other issue is that when people generally think of KRnB they tend to think about KPop which is completely different.</p>
+            <p>Generally with a lot of smaller artists, due to their albums not selling in big bulks.</p>
+            <p>They sell the albums in pre-order so it can be hard to get a hold of physical copies at times.</p>
+            <p>Thus, due to this issue it can be fairly difficult to find them however there are alternatives...</p>
+            <p>I recommend if you are looking for physical copies to buy them on Amazon or buy them through independent vendors.</p>
+            <p>Though due to the nature of some of the artists not being too popular, you can find their songs relatvely easy in Youtube.</p>
+        <hr>
+            <h3>Recommended shops and listening experiences</h3>
+            <p>Though the difficulty of finding of physical copies can be hard, digital ones can be generally easier.</p>
+            <p>When it comes to supporting artists, buying their songs in Apple Music can be helpful or sometimes you can find the physical albums in Amazon.</p>
+            <p>There are also alternatives to find the music in Youtube as well.</p>
+            <div class="logocontainer">
+                <figure>
+                    <a href="https://www.amazon.com">
+                        <img src="./images/amazon.png" class="reclogo">
+                    </a>
+                    <figcaption>Amazon</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://music.apple.com">
+                        <img src="./images/applemusic.png" class="squarelogo">
+                    </a>
+                    <figcaption>Apple Music</figcaption>
+                </figure>
+                <figure>
+                    <a href=https://www.youtube.com>
+                        <img src="./images/youtube.png" class="squarelogo">
+                    </a>
+                    <figcaption>Youtube</figcaption>
+                </figure>
+            </div>
+        </section>
+        <footer>
+        <hr>
         <nav>
-            <a href="./who.html">Who?</a>
+            <a href="#who">Who?</a>
             &#127925;
-            <a href="./when.html">When?</a>
+            <a href="#what">What?</a>
             &#127925;
-            <a href="./where.html">Where?</a>
+            <a href="#where">Where?</a>
             &#127925;
-            <a href="./how.html">How?</a>
+            <a href="#when">When?</a>
             &#127925;
-            <a href="./why.html">Why?</a>
+            <a href="#why">Why?</a>
+            &#127925;
+            <a href="#how">How?</a>
+            &#127925;
         </nav>
-    <hr> 
-    <p>Page Built by <a href="jollypanda.com/">Jolly Panda Industries</a> &copy; 2025</p>
-</footer>
-</body>
+        <hr>
+            <p>Page Built by <a href="../jollypanda.com/index.html">Jolly Panda Industries</a> &copy; 2025</p>
+        </footer>
+    </body>
 </html>
