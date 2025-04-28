@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
 
+/* Custom Font */
 @font-face {
     font-family: 'HaruKaze';
     src: url('./whimsical_fonts/Harukaze.ttf') format('truetype');
@@ -7,25 +8,55 @@
     font-style: normal;
 }
 
-h1, h2, header {
+/* General Body Settings */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    background-color: #fff8f0; 
+    color: #5c2c06; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, header {
     font-family: 'HaruKaze', sans-serif;
     font-weight: normal;
-    font-size: 30px;
-    font-color: 
+    font-size: 36px;
+    color: #d7261b; 
+    text-align: center;
+}
+
+h2 {
+    font-family: 'HaruKaze', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: #f5ac27; 
+    text-align: center;
+}
+
+header {
+    background-color: #fff0e0;
 }
 
 h3, h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600px;
+    font-weight: 600;
+    color: #aa0000;
 }
 
-body {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    color: #333;
-    background-color: #CC232A;
-    margin: 0;
-    padding: 0;
+main header {
+    font-family: 'HaruKaze', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #d7261b;
+    text-align: center;
+}
+
+main p {
+    line-height: 1.8;
+    font-size: 18px;
+    color: #5c2c06;
 }
 
 /* Navigation Bar */
@@ -33,40 +64,84 @@ body {
     position: fixed;
     width: 250px;
     height: 100vh;
-    background-color:#FFD548;
-    color: white;
-    padding: 20px;
+    background-color: #d7261b;
     display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .nav-link {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color:white;
+    color: #f5ac27;
     text-decoration: none;
     margin: 10px 0;
 }
 
-.nav-link:hover {
-    color: #F5AC27;
-}
-
-/* Main */
-main header {
-    font-family: 'Harukaze', sans-serif;
-    font-size: 24px;
-    font-weight: normal;
-    color: #FFD548;
-    text-align: center;
-}
-
-main p {
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-button, nav a {
+nav a {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    color: #d7261b;
+    text-decoration: none;
+    border: none;
 }
+
+button:hover, nav a:hover {
+    background-color: #f5ac27;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #aa0000;
+    background-color: #fff0e0;
+    padding: 20px;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+main section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+#intro p {
+    font-size: 18px;
+    color: #FFD548;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#inventory {
+    background-color: #990000; 
+    padding: 40px 20px;
+    color: #FFD548;
+}
+
+#inventory ul {
+    list-style-type: circle;
+    padding-left: 20px; 
+    margin-left: 0; 
+    max-width: 500px; 
+    text-align: left;
+    margin: 0 auto;
+}
+
+#inventory li {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    padding-left: 20px; 
+    list-style-position: inside;
+}
+
+/* Visit Us Section */
+#visit-us p {
+    font-size: 20px;
+    color: #FFD548;
+    margin-top: 2rem;
+}
+
+
