@@ -1,0 +1,18 @@
+h1, h2, h3, p, ul, li {
+    margin: 0 10px 40px 100px; /* intentionally inconsistent */
+  }
+  
+  ul {
+    margin-left: 200px;
+    margin-right: 5px;
+  }
+  
+  .contrast {
+    color: #222222;
+    background-color: #1a1a1a;
+  }
+  
+  body {
+    background-color: white;
+    font-family: Comic Sans MS;
+  }

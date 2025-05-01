@@ -16,27 +16,30 @@ body {
     color: #5c2c06; 
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 /* Typography */
-h1, header {
-    font-family: 'HaruKaze', sans-serif;
+h1 {
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 36px;
     color: #d7261b; 
     text-align: center;
 }
 
-h2 {
-    font-family: 'HaruKaze', sans-serif;
-    font-weight: normal;
-    font-size: 36px;
-    color: #f5ac27; 
-    text-align: center;
-}
-
 header {
     background-color: #fff0e0;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:#f5ac27;
+    text-shadow: 0 black;
 }
 
 h3, h4 {
@@ -99,7 +102,13 @@ footer {
     background-color: #fff0e0;
     padding: 20px;
     margin-top: 2rem;
+    
+}
+
+footer a {
+
     text-decoration: none;
+    color: black;
 }
 
 main section {
@@ -144,4 +153,23 @@ main section {
     margin-top: 2rem;
 }
 
+.jolly-container {
+    text-align: center;
+    margin: 20px;
+  }
 
+  .jolly-img {
+    width: 700px;
+    height: auto;
+  }
+
+  .jolly-caption {
+    font-family: 'poppins', cursive;
+    font-size: 1.2em;
+    color: #990000;
+    margin-top: 10px;
+  }
+
+  strong {
+    color:#f5ac27;
+  }

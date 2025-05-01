@@ -8,13 +8,16 @@ body {
 
 }
 
-h1,h2,h3 {
+h1,h2 {
     font-family: 'Playful Display', serif;
     color: #2D4C3B;
     text-align: center;
 }
 
 h3 {
+    font-family: 'Playful Display', serif;
+    color: #2D4C3B;
+    text-align: center;
     font-size: 18px;
 }
 
