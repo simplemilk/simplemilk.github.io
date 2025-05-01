@@ -134,6 +134,49 @@ footer nav a:hover {
     margin: 50px auto;
 }
 
+/* Figure */
+figure.table-figure {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+  }
+  
+  figure.table-figure figcaption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+/* Tables */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+table.center th,
+table.center td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+
+table.center thead tr {
+background-color: #2c3e50;
+color: white;
+}
+
+/* Alternate row colors in tbody */
+table.center tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+table.center tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+
+
+/* Device Screen Resolution */
+}
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
         background-color: yellow;

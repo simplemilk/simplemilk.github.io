@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Park's Webpage | ITIS-3135 | Tables</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&family=Lora:wght@400;500&family=Poppins:wght@400;600&family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" >
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+    <main>
+        <h2>Jonathan's Tables Page</h2>
+  
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Professor Oak - poak@pokemon.com - 30</li>
+            <li>Professor Birch -pbirch@pokemon.com - 25</li>
+            <li>Professor Juniper - pjuniper@pokemon.com - 15</li>
+            <li>Professor Magnolia - pmagnolia@pokemon.com - 30</li>
+            <li>Professor Rowan - prowan@pokemon.com - 45</li>
+            <li>Professor Sycamore - psycamore@pokemon.com - 50</li>
+            <li>Professor Elm - pelm@pokemon.com - 10</li>
+        </ol>
+
+
+
+        <h3>Employee Data in Simple Table</h3>
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+            </thead>
+        <tr><td>Professor Oak</td><td>poak@pokemon.com</td><td>30</td></tr>
+        <tr><td>Professor Birch</td><td>pbirch@pokemon.com</td><td>25</td></tr>
+        <tr><td>Professor Juniper</td><td>pjuniper@pokemon.com</td><td>15</td></tr>
+        <tr><td>Professor Magnolia</td><td>pmagnolia@pokemon.com</td><td>30</td></tr>
+        <tr><td>Professor Rowan</td><td>prowan@pokemon.com</td><td>45</td></tr>
+        <tr><td>Professor Sycamore</td><td>psycamore@pokemon.com</td><td>50</td></tr>
+        <tr><td>Professor Elm</td><td>pelm@pokemon.com</td><td>10</td></tr>
+        </table>
+
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure class="table-figure">    
+            <figcaption>Pokemon Professor Employee Information</figcaption>
+                <table class="center">
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Years of Service</th>
+                    <th scope="col">Monthly Salary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2">Classic Era</td>
+                    <td>Professor Oak</td>
+                    <td>poak@pokemon.com</td>
+                    <td>30</td>
+                    <td>$8,000</td>
+                  </tr>
+                  <tr>
+                    <td>Professor Elm</td>
+                    <td>pelm@pokemon.com</td>
+                    <td>10</td>
+                    <td>$5,500</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">Golden Era</td>
+                    <td>Professor Birch</td>
+                    <td>pbirch@pokemon.com</td>
+                    <td>25</td>
+                    <td>$7,200</td>
+                  </tr>
+                  <tr>
+                    <td>Professor Juniper</td>
+                    <td>pjuniper@pokemon.com</td>
+                    <td>15</td>
+                    <td>$6,800</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">Dark Era</td>
+                    <td>Professor Magnolia</td>
+                    <td>pmagnolia@pokemon.com</td>
+                    <td>30</td>
+                    <td>$7,800</td>
+                  </tr>
+                  <tr>
+                    <td>Professor Rowan</td>
+                    <td>prowan@pokemon.com</td>
+                    <td>45</td>
+                    <td>$9,000</td>
+                  </tr>
+                  <tr>
+                    <td>Professor Sycamore</td>
+                    <td>psycamore@pokemon.com</td>
+                    <td>50</td>
+                    <td>$9,500</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>205</td>
+                    <td>$53,800</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+  </body>
+</html>
