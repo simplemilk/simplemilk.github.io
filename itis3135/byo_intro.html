@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="scripts/headerfooter.js" defer></script>
+  <script src="scripts/survey.js" defer></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+  <main>
+    <h2>Build Your Own Intro</h2>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+    <form id="intro-form">
+      <label>Name: <input type="text" id="name" value="First & Last Name" required></label><br>
+      <label>Mascot: <input type="text" id="mascot" value="Animal that starts with your first last name initial" required></label><br>
+      <label>Image: <input type="file" id="image" accept=".png, .jpg, .jpeg" required></label><br>
+      <label>Image Caption: <input type="text" id="caption" value="Me as a Panda" required></label><br>
+
+      <label>Personal Background:<br><textarea id="personal" required>Grew up in Charlotte...</textarea></label><br>
+      <label>Professional Background:<br><textarea id="professional" required>Worked at XYZ Corp...</textarea></label><br>
+      <label>Academic Background:<br><textarea id="academic" required>Currently studying IT at UNCC...</textarea></label><br>
+      <label>Background in Web Development:<br><textarea id="webdev" required>Some experience with HTML/CSS</textarea></label><br>
+      <label>Primary Computer Platform: <input type="text" id="platform" value="Windows" required></label><br>
+
+      <fieldset id="courses-section">
+        <legend>Courses Currently Taking:</legend>
+        <div id="course-container">
+          <input type="text" name="courses[]" class="course-input">
+        </div>
+        <button type="button" onclick="addCourseField()">Add Course</button>
+      </fieldset><br>
+
+      <label>Funny Thing? <input type="text" id="funny"></label><br>
+      <label>Anything Else? <input type="text" id="anything"></label><br>
+
+      <label><input type="checkbox" id="agree" required>
+        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+      </label><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+    <div id="result-display" style="display: none;"></div>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+  <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

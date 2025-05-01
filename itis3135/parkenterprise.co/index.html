@@ -5,13 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park Enterprise - Services</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&family=Lora:wght@400;500&family=Poppins:wght@400;600&family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" >
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +23,8 @@
             display: flex;
             align-items: center;
             padding: 20px 0;
-            border-bottom: 3px solid #30BCED;
+            border-bottom: 3px solid #303036;
+            background-color: #F6F5F3;
             margin-bottom: 30px;
         }
         
@@ -62,6 +59,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         
+        a {
+            text-decoration: none;
+            color: #30bced;
+        }
         h2 {
             color: #FC5130; 
             margin-bottom: 20px;
@@ -70,6 +71,11 @@
             padding-bottom: 10px;
         }
         
+        h3 {
+            color: #FC5130;
+            margin-bottom: 10px;
+        }
+
         p {
             margin-bottom: 20px;
             font-size: 1.1rem;
@@ -105,20 +111,16 @@
             margin-top: 30px;
             border-radius: 0 5px 5px 0;
         }
-        
-        .contact-info h3 {
-            color: #FC5130;
-            margin-bottom: 10px;
-        }
-        
-  
+
         footer {
             margin-top: 30px;
             padding: 15px 0;
-            border-top: 2px solid #30BCED; 
+            border-top: 2px solid #303036; 
             text-align: center;
             font-size: 0.9rem;
-            color: #FFFAFF; 
+            color: #303036; 
+            background-color: #F6F5F3;
+            text-decoration: none;
         }
         
         .tagline {
@@ -127,21 +129,8 @@
             color: #FC5130;
         }
         
-  
-        .cta-button {
-            display: inline-block;
-            background-color: #FC5130; 
-            color: #FFFAFF; 
-            padding: 12px 24px;
+        #validation_link_css {
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin-top: 15px;
-        }
-        
-        .cta-button:hover {
-            background-color: #e03e20; 
         }
     </style>
 </head>
@@ -151,22 +140,18 @@
             <img src="../images/parkenterpriselogo.png" alt="Park Enterprise Logo - Bold stylized text with PARK in large letters and ENTERPRISE in smaller text below" class="logo">
             <h1 class="visually-hidden">Park Enterprise</h1>
         </div>
+        <a href="../index.html">Return to Main Page</a>
     </header>
     
     <main>
         <h2>Park Enterprise Services</h2>
         
-        <p>
-            At Park Enterprise, we blend innovation with sustainability to create digital solutions that stand the test of time. 
-            Founded in 2018, our team of experts specializes in web development, UI/UX design, and digital marketing strategies 
-            that help businesses thrive in the modern landscape. With a commitment to environmental responsibility, we approach 
-            every project with the same care and attention that nature invests in its most magnificent parks and forests.
-        </p>
+        <p>At Park Enterprise, we blend innovation with sustainability to create digital solutions that stand the test of time.</p> 
+        <p>Founded in 2018, our team of experts specializes in web development and UI/UX design that help businesses thrive in the modern landscape.</p> 
         
+        <h3>Recognitions and Awards (Amazing Things)</h3>
         <ul>
             <li>Award-winning design team with over 50 industry recognitions</li>
-            <li>Carbon-neutral operations with sustainable hosting solutions</li>
-            <li>Specialized expertise in eco-friendly brand development</li>
             <li>Custom-built solutions tailored to your specific business needs</li>
             <li>Collaborative approach ensuring your vision remains central</li>
             <li>Ongoing support and maintenance with 24/7 emergency response</li>
@@ -174,25 +159,29 @@
             <li>Commitment to accessibility and inclusive design practices</li>
         </ul>
         
-        <p>
-            We're eager to transform your digital presence into a powerful asset that grows your business while reflecting your values. 
-            Our approach combines cutting-edge technology with timeless design principles to create websites and applications that not only look 
-            impressive but deliver measurable results. Let's collaborate to create something extraordinary together.
-        </p>
+        <p>We're eager to transform your digital presence into a powerful asset that grows your business while reflecting your values.</p> 
+        <p>We combine cutting-edge technology with timeless design principles to create websites and applications that look impressive and deliver measurable results.</p> 
+        <p>Let's collaborate to create something extraordinary together.</p>
         
         <div class="contact-info">
             <h3>Get in Touch</h3>
-            <p>
-                Email: info@parkenterprise.com<br>
-                Phone: (555) 123-4567<br>
-                Address: 742 Evergreen Terrace, Springfield, OR 97477
-            </p>
-            <a href="#" class="cta-button">Request a Consultation</a>
+            <p>Email: parkenterprise@gmail.com</p><br>
+            <p>Phone: (984) 222-1111</p><br>
+            <p>Address: 3073 Kelly Street, Charlotte, NC 28211</p>
         </div>
     </main>
     
     <footer>
-        <div data-include="components/footer.html"></div>
+            <p>2025 Page created by Jonathan Park, All Rights Reserved</p>
+            <p><a href="https://www.freecodecamp.org/certification/simplemilk/responsive-web-design">Certified in Responsive Web Design</a> ||
+            </p>                
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            <script>
+            document.getElementbyId("validation_link_css_html").setAttribute("href","https://validator.w3.org/check?uri=" +location.href);
+            document.getElementbyId("validation_link_css_html").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" +location.href);
+</script>
     </footer>
     <script src="scripts/HTMLInclude.js"></script>
 </body>
