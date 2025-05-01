@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Park Enterprise - Services</title>
     <style>
-        /* Reset and base styles */
+
         * {
             margin: 0;
             padding: 0;
@@ -16,19 +16,18 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #303036; /* Dark gray text */
-            background-color: #F29559; /* Peach/orange background */
+            color: #303036;
+            background-color: #F29559;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
         
-        /* Header styles */
         header {
             display: flex;
             align-items: center;
             padding: 20px 0;
-            border-bottom: 3px solid #30BCED; /* Bright blue border */
+            border-bottom: 3px solid #30BCED;
             margin-bottom: 30px;
         }
         
@@ -43,7 +42,7 @@
             margin-right: 15px;
         }
         
-        /* Hide the text since it's in the logo */
+
         .visually-hidden {
             position: absolute;
             width: 1px;
@@ -55,19 +54,19 @@
             border: 0;
         }
         
-        /* Main content styles */
+
         main {
-            background-color: #FFFAFF; /* Off-white background */
+            background-color: #FFFAFF;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         
         h2 {
-            color: #FC5130; /* Orange heading */
+            color: #FC5130; 
             margin-bottom: 20px;
             font-size: 2rem;
-            border-bottom: 2px solid #303036; /* Dark gray border */
+            border-bottom: 2px solid #303036;
             padding-bottom: 10px;
         }
         
@@ -76,7 +75,7 @@
             font-size: 1.1rem;
         }
         
-        /* Custom bullet points */
+
         ul {
             margin: 20px 0;
             list-style: none;
@@ -90,49 +89,49 @@
         }
         
         ul li::before {
-            content: "•"; /* Simple bullet */
+            content: "•";
             position: absolute;
             left: 0;
-            color: #FC5130; /* Orange bullet color */
+            color: #FC5130;
             font-size: 1.5rem;
             line-height: 1;
         }
         
-        /* Contact information block */
+
         .contact-info {
-            background-color: rgba(48, 188, 237, 0.1); /* Light blue background */
-            border-left: 5px solid #30BCED; /* Bright blue border */
+            background-color: rgba(48, 188, 237, 0.1); 
+            border-left: 5px solid #30BCED; 
             padding: 20px;
             margin-top: 30px;
             border-radius: 0 5px 5px 0;
         }
         
         .contact-info h3 {
-            color: #FC5130; /* Orange heading */
+            color: #FC5130;
             margin-bottom: 10px;
         }
         
-        /* Footer styles */
+  
         footer {
             margin-top: 30px;
             padding: 15px 0;
-            border-top: 2px solid #30BCED; /* Bright blue border */
+            border-top: 2px solid #30BCED; 
             text-align: center;
             font-size: 0.9rem;
-            color: #FFFAFF; /* Off-white text */
+            color: #FFFAFF; 
         }
         
         .tagline {
             font-style: italic;
             font-weight: bold;
-            color: #FC5130; /* Orange tagline */
+            color: #FC5130;
         }
         
-        /* Button styles for potential CTA */
+  
         .cta-button {
             display: inline-block;
-            background-color: #FC5130; /* Orange button */
-            color: #FFFAFF; /* Off-white text */
+            background-color: #FC5130; 
+            color: #FFFAFF; 
             padding: 12px 24px;
             text-decoration: none;
             border-radius: 4px;
@@ -142,7 +141,7 @@
         }
         
         .cta-button:hover {
-            background-color: #e03e20; /* Darker orange on hover */
+            background-color: #e03e20; 
         }
     </style>
 </head>
@@ -193,19 +192,8 @@
     </main>
     
     <footer>
-        <p> 2025 <a href=../parkenterprise/index.html>Designed by Park Enterprise</a>, All Rights Reserved </p>
-        <i href="https://www.freecodecamp.org/certification/simplemilk/responsive-web-design">Certified in Responsive Web Design</i> ||        
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_css_html">
-            <img style="border:0;width:88px;height:31px"
-            src="https://simplemilk.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
-        <script>
-          document.getElementbyId("validation_link_css_html").setAttribute("href","https://validator.w3.org/check?uri=" +location.href);
-          document.getElementbyId("validation_link_css_html").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" +location.href);
-        </script>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
