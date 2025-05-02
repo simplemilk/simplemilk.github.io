@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Park's Webpage | ITIS-3135 | Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&family=Lora:wght@400;500&family=Poppins:wght@400;600&family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" >
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .slideshow-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      position: relative;
+      text-align: center;
+    }
+    .slide-img {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+    .caption {
+      margin: 0.5rem auto;
+      font-weight: bold;
+    }
+    .thumbnail-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+    .thumbnail-list img {
+      width: 80px;
+      height: 50px;
+      cursor: pointer;
+      object-fit: cover;
+    }
+  </style>
+  </head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+  <main>
+    <h2>Slideshow Gallery</h2>
+    <div class="slideshow-container">
+      <img class="slide-img" src="images/juicebox.png" alt="J - Juice Box" />
+      <img class="slide-img" src="images/octopustoy.png" alt="O - Octopus Toy" />
+      <img class="slide-img" src="images/notebook.png" alt="N - Notebook" />
+      <img class="slide-img" src="images/apple.png" alt="A - Apple" />
+      <img class="slide-img" src="images/telescope.png" alt="T - Telescope" />
+      <img class="slide-img" src="images/hammer.png" alt="H - Hammer" />
+      <img class="slide-img" src="images/airplane.png" alt="A - Airplane" />
+      <img class="slide-img" src="images/napkin.png" alt="N - Napkin" />
+      <img class="slide-img" src="images/paintbrush.png" alt="P - Paintbrush" />
+      <img class="slide-img" src="images/anchor.png" alt="A - Anchor" />
+      <img class="slide-img" src="images/robot.png" alt="R - Robot" />
+      <img class="slide-img" src="images/kite.png" alt="K - Kite" />
+      <p class="caption">J - Juice Box</p>
+    </div>
+
+    <div class="thumbnail-list">
+      <img src="images/juicebox.png" data-index="0" alt="J" />
+      <img src="images/octopustoy.png" data-index="1" alt="O" />
+      <img src="images/notebook.png" data-index="2" alt="N" />
+      <img src="images/apple.png" data-index="3" alt="A" />
+      <img src="images/telescope.png" data-index="4" alt="T" />
+      <img src="images/hammer.png" data-index="5" alt="H" />
+      <img src="images/airplane.png" data-index="6" alt="A" />
+      <img src="images/napkin.png" data-index="7" alt="N" />
+      <img src="images/paintbrush.png" data-index="8" alt="P" />
+      <img src="images/anchor.png" data-index="9" alt="A" />
+      <img src="images/robot.png" data-index="10" alt="R" />
+      <img src="images/kite.png" data-index="11" alt="K" />
+    </div>
+
+    <section id="ai-prompts">
+      <h3>AI Image Prompts Used</h3>
+      <ul>
+        <li>J - "A realistic digital photo of a juice box on a table, landscape orientation"</li>
+        <li>O - "A toy octopus in a bathtub, cartoon style, landscape"</li>
+        <li>N - "A spiral notebook on a school desk, landscape"</li>
+        <li>A - "A shiny red apple on a white plate, realistic photo"</li>
+        <li>T - "A telescope on a mountain at night, scenic view"</li>
+        <li>H - "A hammer on a wooden surface, detailed texture"</li>
+        <li>A - "A paper airplane flying through blue sky, landscape"</li>
+        <li>N - "A napkin folded neatly on a dining table"</li>
+        <li>P - "A colorful paintbrush with paint splatter"</li>
+        <li>A - "A heavy anchor underwater, ocean theme"</li>
+        <li>R - "A toy robot on a shelf, friendly design"</li>
+        <li>K - "A bright kite flying in the sky with clouds"</li>
+      </ul>
+      <p><strong>Tool Used:</strong> Bing Image Creator (DALL·E)</p>
+    </section>
+    <section id="notes">
+      <h3>Notes</h3>
+      <ul>
+          <li>Used ChatGPT ot help with the prompts</li>
+          <li>Didn't get help from otherp eople for this one.</li>
+          <li>Not much challenges pretty straight forward</li>
+          <li>This is completely my own work and I didn't have assistance of others (people) for my code.</li>
+          <li>Jonathan Park 05/02/2024</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+</footer>
+  <script>
+    const captions = [
+      'J - Juice Box', 'O - Octopus Toy', 'N - Notebook', 'A - Apple', 'T - Telescope',
+      'H - Hammer', 'A - Airplane', 'N - Napkin', 'P - Paintbrush', 'A - Anchor',
+      'R - Robot', 'K - Kite'
+    ];
+
+    let currentIndex = 0;
+    const slides = $('.slide-img');
+    const caption = $('.caption');
+
+    function showSlide(index) {
+      slides.hide();
+      slides.eq(index).show();
+      caption.text(captions[index]);
+      $('.thumbnail-list img').removeClass('active');
+      $(`.thumbnail-list img[data-index='${index}']`).addClass('active');
+    }
+
+    $('.thumbnail-list img').on('click', function () {
+      const index = $(this).data('index');
+      currentIndex = index;
+      showSlide(index);
+    });
+
+    $(document).ready(function () {
+      showSlide(0);
+    });
+    
+  </script>
+      <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>

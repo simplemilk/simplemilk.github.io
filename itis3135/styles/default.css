@@ -215,4 +215,33 @@ table.center tbody tr:nth-child(even) {
         max-width: 1024px;
         height: auto;
     }
+
+    .slideshow-container {
+        max-width: 800px;
+        margin: 2rem auto;
+        position: relative;
+        text-align: center;
+      }
+      .slide-img {
+        width: 100%;
+        height: auto;
+        display: none;
+      }
+      .caption {
+        margin: 0.5rem auto;
+        font-weight: bold;
+      }
+      .thumbnail-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1rem;
+      }
+      .thumbnail-list img {
+        width: 80px;
+        height: 50px;
+        cursor: pointer;
+        object-fit: cover;
+      }
 }
