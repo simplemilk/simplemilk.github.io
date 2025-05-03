@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jonathan Park's Webpage | ITIS-3135 | Contacts</title>
-    <link rel="stylesheet" href="styles/project.css">
+    <title>Park Insurance | Contacts</title>
+    <link rel="stylesheet" href="../projects/styles/project.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   </head>
   <body>
         <header>
-            <div data-include="components/header.html"></div>
+            <div data-include="../projects/components/header.html"></div>
         </header>
     <main>
-        <h2>Contact Us!</h2>
-        
-        <p style="text-align:center">Hello, welcome to my 3135 course page!</p>
+        <section class="contact-intro">
+            <h2>Contact Us!</h2>
+            <p>Hello, here are the ways to contact us for any questions!</p>
+        </section>
+        <section class="contact-options">
+            <h3>Quick Contact</h3>
+            <ul>
+                <li>Phone: (984)-111-11111</li>
+                <li>Email: dummymail@hotmail.com</li>
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h3>Send us a message:</h3>
+            <form action="mailto:dummymail@hotmail.com" method="post">
+                <label for="name">Your name:</label><br>
+                <input type="text" id="name" name="name" required /><br>
+                <label for="email">Your email:</label><br>
+                <input type="email" id="email" name="email" required /><br>
+                <label for="message">Your message:</label><br>
+                <textarea id="message" name="message" rows="6" required></textarea><br>
 
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <div data-include="components/footer.html"></div>
+        <div data-include="../projects/components/footer.html"></div>
     </footer>
-    <script src="scripts/HTMLInclude.js"></script>
+    <script src="../scripts/HTMLInclude.js"></script>
   </body>
 </html>

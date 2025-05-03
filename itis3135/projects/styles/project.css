@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #003366;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer, main {
+    padding: 20px;
+  }
+  
+  h1 img {
+    margin-right: 10px;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: #e8f0ff;
+    padding: 40px 20px;
+  }
+  
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .highlights ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .call-to-action .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .call-to-action .button:hover {
+    background-color: #0055aa;
+  }
