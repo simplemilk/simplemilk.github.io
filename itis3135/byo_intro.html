@@ -12,46 +12,121 @@
     <header>
         <div data-include="components/header.html"></div>
     </header>
-  <main>
-    <h2>Build Your Own Intro</h2>
-    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan Park's Webpage | ITIS 3135 | Build Your Own Introduction</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/header-footer.js" defer></script>
+        <script src="scripts/survey.js" defer></script>
+    </head>
+    <body>
+        <id="page-container">
+            <header id="header-placeholder"></header>
+            
+            <main>
+                <h2>Build Your Own Introduction</h2>
+                
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                
+                <div id="form-container">
+                    <form id="intro-form" onsubmit="return submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Name: <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mascot">Mascot: <span class="required">*</span></label>
+                            <input type="text" id="mascot" name="mascot" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="image">Profile Image (JPG or PNG only): <span class="required">*</span></label>
+                            <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="image-caption">Image Caption: <span class="required">*</span></label>
+                            <input type="text" id="image-caption" name="image-caption" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="personal-background">Personal Background: <span class="required">*</span></label>
+                            <textarea id="personal-background" name="personal-background" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="professional-background">Professional Background: <span class="required">*</span></label>
+                            <textarea id="professional-background" name="professional-background" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="academic-background">Academic Background: <span class="required">*</span></label>
+                            <textarea id="academic-background" name="academic-background" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="web-development-background">Background in Web Development: <span class="required">*</span></label>
+                            <textarea id="web-development-background" name="web-development-background" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="primary-computer-platform">Primary Computer Platform: <span class="required">*</span></label>
+                            <input type="text" id="primary-computer-platform" name="primary-computer-platform" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Courses Currently Taking: <span class="required">*</span></label>
+                            <div id="courses-container">
+                                <div class="course-entry">
+                                    <input type="text" name="courses[]" class="course-input" required>
+                                    <button type="button" class="delete-course" onclick="deleteCourse(this)">Delete</button>
+                                </div>
+                            </div>
+                            <button type="button" id="add-course-btn" onclick="addCourse()">Add Another Course</button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="funny-thing">Something Funny About You:</label>
+                            <textarea id="funny-thing" name="funny-thing" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="anything-else">Anything Else:</label>
+                            <textarea id="anything-else" name="anything-else" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <input type="submit" value="Submit" class="btn">
+                            <input type="reset" value="Reset" class="btn" onclick="resetForm()">
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="intro-display" style="display: none;">
+                    <!-- The generated introduction will be displayed here -->
+                </div>
+                
+                <div id="reset-container" style="display: none; margin-top: 20px; text-align: center;">
+                    <button onclick="resetDisplay()" class="btn">Create Another Introduction</button>
+                </div>
+            </main>
+            
+            <footer>
+                <div data-include="components/footer.html"></div>
+            </footer>
+            <script src="scripts/HTMLInclude.js"></script>
+    </body>
+    </html>
 
-    <form id="intro-form">
-      <label>Name: <input type="text" id="name" value="First & Last Name" required></label><br>
-      <label>Mascot: <input type="text" id="mascot" value="Animal that starts with your first last name initial" required></label><br>
-      <label>Image: <input type="file" id="image" accept=".png, .jpg, .jpeg" required></label><br>
-      <label>Image Caption: <input type="text" id="caption" value="Me as a Panda" required></label><br>
 
-      <label>Personal Background:<br><textarea id="personal" required>Grew up in Charlotte...</textarea></label><br>
-      <label>Professional Background:<br><textarea id="professional" required>Worked at XYZ Corp...</textarea></label><br>
-      <label>Academic Background:<br><textarea id="academic" required>Currently studying IT at UNCC...</textarea></label><br>
-      <label>Background in Web Development:<br><textarea id="webdev" required>Some experience with HTML/CSS</textarea></label><br>
-      <label>Primary Computer Platform: <input type="text" id="platform" value="Windows" required></label><br>
-
-      <fieldset id="courses-section">
-        <legend>Courses Currently Taking:</legend>
-        <div id="course-container">
-          <input type="text" name="courses[]" class="course-input">
-        </div>
-        <button type="button" onclick="addCourseField()">Add Course</button>
-      </fieldset><br>
-
-      <label>Funny Thing? <input type="text" id="funny"></label><br>
-      <label>Anything Else? <input type="text" id="anything"></label><br>
-
-      <label><input type="checkbox" id="agree" required>
-        I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
-      </label><br><br>
-
-      <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-    </form>
-
-    <div id="result-display" style="display: none;"></div>
-  </main>
-  <footer>
-    <div data-include="components/footer.html"></div>
-</footer>
-  <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
