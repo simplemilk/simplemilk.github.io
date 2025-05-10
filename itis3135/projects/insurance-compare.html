@@ -12,98 +12,107 @@
         <header>
             <div data-include="../projects/components/header.html"></div>
         </header>
-    <main>
-        <section id="introduction">
-          <h2>Comparing Insurance Plans</h2>
-          <p>Every Insurance plan has its own benefits and costs; however, plans costs can change over time.</p>
-          <p>Due to this reason, we can provide you a sample sheet that can show you the differences between a couple of plans available in North Carolina.</p>
-          <p>For a more detailed quote please <a href="contact.html">contact</a> us for more information.</p>
-        </section>
-        <section id="insurance-plans">
-          <h2>Different Tiers of Insurance</h2>
-          <p>For every company they have different tiers of insurance based on the quality of care they will provide.</p>
-          <p>For <i>Blue Cross and Blue Shield</i> they have the High Deductible Health Plan (HDHP) and Standard PPO plan.</p>
+<main>
+    <section id="introduction">
+      <h2>Comparing Insurance Plans</h2>
+      <p>Every Insurance plan has its own benefits and costs; however, plans costs can change over time.</p>
+      <p>Due to this reason, we can provide you a sample sheet that can show you the differences between a couple of plans available in North Carolina.</p>
+      <p>For a more detailed quote please <a href="contact.html">contact</a> us for more information.</p>
+    </section>
 
-        </section>
-        <section id="compare-chart">
-          <h2>Comparison Chart</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th>Aetna</th>
-                <th>Blue Cross Blue Shield (BCBS)</th>
-                <th>Cigna</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Plan Availability</td>
-                <td>49 states + D.C.</td>
-                <td>All 50 states (through regional companies)</td>
-                <td>13 states (strong pharmacy presence)</td>
-              </tr>
-              <tr>
-                <td>Medicare Advantage Availability</td>
-                <td>49 states + D.C.</td>
-                <td>32 states + D.C.</td>
-                <td>29 states + D.C.</td>
-              </tr>
-              <tr>
-                <td>Average Star Rating (Medicare)</td>
-                <td>4.29</td>
-                <td>3.8</td>
-                <td>3.97</td>
-              </tr>
-              <tr>
-                <td>Average Premium (Medicare)</td>
-                <td>$23</td>
-                <td>$45</td>
-                <td>Lowest among major providers</td>
-              </tr>
-              <tr>
-                <td>% of $0-Premium Medicare Plans</td>
-                <td>59%</td>
-                <td>Varies by region</td>
-                <td>80%</td>
-              </tr>
-              <tr>
-                <td>Top-Rated Medicare Plans (≥ 4 Stars)</td>
-                <td>78%</td>
-                <td>Varies</td>
-                <td>33%</td>
-              </tr>
-              <tr>
-                <td>Mobile App Experience</td>
-                <td>Aetna Health app (4.7/5 rating)</td>
-                <td>Regional apps (avg 4.2/5)</td>
-                <td>myCigna app with telehealth, goals, claims</td>
-              </tr>
-              <tr>
-                <td>Pharmacy Services</td>
-                <td>Integrated with CVS Health</td>
-                <td>Retail pharmacy access, varies by affiliate</td>
-                <td>67,000+ pharmacies, home delivery, 24/7 support</td>
-              </tr>
-              <tr>
-                <td>Extra Benefits</td>
-                <td>MinuteClinic, CVS wellness products</td>
-                <td>Blue365 wellness discount program</td>
-                <td>Low-cost prescriptions, robust Rx services</td>
-              </tr>
-              <tr>
-                <td>Best For</td>
-                <td>Nationwide access, CVS Health users</td>
-                <td>In-state networks, wellness discounts</td>
-                <td>Low premiums, pharmacy access</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-    </main>
+    <section id="insurance-plans">
+      <h2>Different Tiers of Insurance</h2>
+      <p>For every company they have different tiers of insurance based on the quality of care they will provide.</p>
+      <p>For <i>Blue Cross and Blue Shield</i> they have the High Deductible Health Plan (HDHP) and Standard PPO plan.</p>
+    </section>
+
+    <section id="compare-chart">
+      <h2>Comparison Chart</h2>
+
+    <div id="checkbox-controls">
+      <label><input type="checkbox" id="toggle-aetna" checked> Aetna</label>
+      <label><input type="checkbox" id="toggle-bcbs" checked> BCBS</label>
+      <label><input type="checkbox" id="toggle-cigna" checked> Cigna</label>
+    </div>
+    
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th id="col-aetna">Aetna</th>
+            <th id="col-bcbs">Blue Cross Blue Shield (BCBS)</th>
+            <th id="col-cigna">Cigna</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plan Availability</td>
+            <td class="col-aetna">49 states + D.C.</td>
+            <td class="col-bcbs">All 50 states (through regional companies)</td>
+            <td class="col-cigna">13 states (strong pharmacy presence)</td>
+          </tr>
+          <tr>
+            <td>Medicare Advantage Availability</td>
+            <td class="col-aetna">49 states + D.C.</td>
+            <td class="col-bcbs">32 states + D.C.</td>
+            <td class="col-cigna">29 states + D.C.</td>
+          </tr>
+          <tr>
+            <td>Average Star Rating (Medicare)</td>
+            <td class="col-aetna">4.29</td>
+            <td class="col-bcbs">3.8</td>
+            <td class="col-cigna">3.97</td>
+          </tr>
+          <tr>
+            <td>Average Premium (Medicare)</td>
+            <td class="col-aetna">$23</td>
+            <td class="col-bcbs">$45</td>
+            <td class="col-cigna">Lowest among major providers</td>
+          </tr>
+          <tr>
+            <td>% of $0-Premium Medicare Plans</td>
+            <td class="col-aetna">59%</td>
+            <td class="col-bcbs">Varies by region</td>
+            <td class="col-cigna">80%</td>
+          </tr>
+          <tr>
+            <td>Top-Rated Medicare Plans (≥ 4 Stars)</td>
+            <td class="col-aetna">78%</td>
+            <td class="col-bcbs">Varies</td>
+            <td class="col-cigna">33%</td>
+          </tr>
+          <tr>
+            <td>Mobile App Experience</td>
+            <td class="col-aetna">Aetna Health app (4.7/5 rating)</td>
+            <td class="col-bcbs">Regional apps (avg 4.2/5)</td>
+            <td class="col-cigna">myCigna app with telehealth, goals, claims</td>
+          </tr>
+          <tr>
+            <td>Pharmacy Services</td>
+            <td class="col-aetna">Integrated with CVS Health</td>
+            <td class="col-bcbs">Retail pharmacy access, varies by affiliate</td>
+            <td class="col-cigna">67,000+ pharmacies, home delivery, 24/7 support</td>
+          </tr>
+          <tr>
+            <td>Extra Benefits</td>
+            <td class="col-aetna">MinuteClinic, CVS wellness products</td>
+            <td class="col-bcbs">Blue365 wellness discount program</td>
+            <td class="col-cigna">Low-cost prescriptions, robust Rx services</td>
+          </tr>
+          <tr>
+            <td>Best For</td>
+            <td class="col-aetna">Nationwide access, CVS Health users</td>
+            <td class="col-bcbs">In-state networks, wellness discounts</td>
+            <td class="col-cigna">Low premiums, pharmacy access</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
     <footer>
         <div data-include="../projects/components/footer.html"></div>
     </footer>
     <script src="../scripts/HTMLInclude.js"></script>
+    <script src="scripts/default.js"></script>
   </body>
 </html>

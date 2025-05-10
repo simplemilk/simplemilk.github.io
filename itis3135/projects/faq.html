@@ -8,45 +8,41 @@
     <link rel="stylesheet" href="../projects/styles/project.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-        <header>
-            <div data-include="../projects/components/header.html"></div>
-        </header>
-    <main>
-        <h2>FAQ</h2>
-        <section id="table-of-contents">
-          <a href="#where">Where are you from?</a><br>
-          <a href="#inspiration">What made you want to become an insurance agent?</a><br>
-          <a href="#demographic">What's your main demographic for your job?</a><br>
-          <a href="#misconceptions">What is the most common misconception you faced while working in health insurance?</a>
-        </section>
-        <section id="where">
-          <h3>Where are you from?</h3>
-          <p>I am from <a href=https://en.wikipedia.org/wiki/Daegu>Daegu, South Korea</a>. I have moved to the US around 1991 where I moved in with my sister and brother at their home.</p>
-        </section>
-        <section id="inspiration">
-          <h3>What made you want to become an Insurance Agent?</h3>
-          <p>Prior to being in the US, I used to work as an architect but quit due to lack of interest I had in the field.</p>
-          <p>When I married my wife here, from my limited English, I tried to find a job that didn't require a specialty degree and something I could study and take an exam right away.</p>
-          <p>As a result, I ended up in this field for a while now and am currently working as well!</p>
-        </section>
-        <section id="demographic">
-          <h3>What's your main demographic for your job?</h3>
-          <p>For my job, I primarily work with Koreans due to my proficiency in the language and my connections with the church.</p>
-          <p>However, that's not the only community I work with! I work with latinos, chinese, and other Americans that wish to find good insurance plans!</p>
-        </section>
-        <section id="misconceptions">
-          <h3>What is the most common misconception you faced while working in health insurance?</h3>
-          <p>The biggest misconception that I have encountered was regarding that of pre-existing conditions.</p>
-          <p>Pre-existing conditions is when you have health problems prior to having a health insurance.</p>
-          <p>Many people believe that from having pre-existing conditions causes their insurance rates to go up.</p>
-          <p>However with the passing of the affordable care act (ACA), people can contest their charges online as it's legal to allow this to occur.</p>
-          <p>If you have any similar problems with your plan, do not hesitate to contact me through my <a href="contacts.html">contacts</a> list.</p>
-        </section>
-    </main>
-    <footer>
-        <div data-include="../projects/components/footer.html"></div>
-    </footer>
+<body>
+  <header>
+    <div data-include="../projects/components/header.html"></div>
+  </header>
+<main>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div id="q1" class="question" onclick="toggleAnswer('a1')">Where are you from?</div>
+      <div id="a1" class="answer">
+        <p>I am from <a href="https://en.wikipedia.org/wiki/Daegu">Daegu, South Korea</a>. I moved to the US around 1991 to live with my sister and brother.</p>
+      </div>
+
+      <div id="q2" class="question" onclick="toggleAnswer('a2')">What made you want to become an insurance agent?</div>
+      <div id="a2" class="answer">
+        <p>Before coming to the US, I worked as an architect but lost interest in the field.</p>
+        <p>After getting married here, I sought a job that didn’t require a specialized degree but allowed certification through exams, leading me to insurance.</p>
+      </div>
+
+      <div id="q3" class="question" onclick="toggleAnswer('a3')">What's your main demographic for your job?</div>
+      <div id="a3" class="answer">
+        <p>I primarily work with Korean clients due to language and church community ties, but also serve Latino, Chinese, and other American clients seeking quality insurance.</p>
+      </div>
+
+      <div id="q4" class="question" onclick="toggleAnswer('a4')">What is the most common misconception you faced while working in health insurance?</div>
+      <div id="a4" class="answer">
+        <p>A major misconception involves pre-existing conditions. Many believe these conditions increase rates.</p>
+        <p>However, the Affordable Care Act prevents discrimination for pre-existing conditions, and unjust charges can be contested.</p>
+        <p>If you face such issues, feel free to <a href="contacts.html">contact me</a>.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div data-include="../projects/components/footer.html"></div>
     <script src="../scripts/HTMLInclude.js"></script>
+    <script src="scripts/default.js"></script>
+  </footer>
   </body>
 </html>

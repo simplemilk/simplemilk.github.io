@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Park Insurance | Contacts</title>
-    <link rel="stylesheet" href="../projects/styles/project.css">
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-        <header>
-            <div data-include="../projects/components/header.html"></div>
-        </header>
-    <main>
-        <section class="contact-intro">
-            <h2>Contact Us!</h2>
-            <p>Hello, here are the ways to contact us for any questions!</p>
-        </section>
-        <section class="contact-options">
-            <h3>Quick Contact</h3>
-            <ul>
-                <li>Phone: (984)-111-11111</li>
-                <li>Email: dummymail@hotmail.com</li>
-                <li><a href="https://maps.app.goo.gl/yvGs6fEvik2j6Mbj9">Office Hours</a>: 9 AM - 5 PM Mon-Fri</li>
-            </ul>
-        </section>
-        <section class="contact-form">
-            <h3>Send us a message:</h3>
-            <form action="mailto:dummymail@hotmail.com" method="post">
-                <label for="name">Your name:</label><br>
-                <input type="text" id="name" name="name" required /><br>
-                <label for="email">Your email:</label><br>
-                <input type="email" id="email" name="email" required /><br>
-                <label for="message">Your message:</label><br>
-                <textarea id="message" name="message" rows="6" required></textarea><br>
-
-                <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <div data-include="../projects/components/footer.html"></div>
-    </footer>
-    <script src="../scripts/HTMLInclude.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Park Insurance | Contacts</title>
+  <link rel="stylesheet" href="../projects/styles/project.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="../projects/components/header.html"></div>
+  </header>
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>We're here to help with any questions about insurance plans or policies. Reach out using any of the methods below.</p>
+      
+      <div class="contact-card">
+        <h3>Our Contact Information</h3>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>(984)-111-11111</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">📩</div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>dummymail@hotmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">🏢</div>
+            <div class="contact-text">
+              <h4>Office Hours</h4>
+              <p>9 AM - 5 PM Monday through Friday</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">🗺️</div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p><a href="https://maps.app.goo.gl/yvGs6fEvik2j6Mbj9" target="_blank">View our office location</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-action">
+          <a href="mailto:dummymail@hotmail.com" class="email-button">Send Us an Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div data-include="../projects/components/footer.html"></div>
+  </footer>
+  <script src="../scripts/HTMLInclude.js"></script>
+  <script src="scripts/default.js"></script>
+</body>
 </html>
