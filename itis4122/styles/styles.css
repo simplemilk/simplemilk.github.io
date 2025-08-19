@@ -1,0 +1,57 @@
+/* TO DO: Implement styles sheet for index.html */
+
+/* Backgrounds */
+.background {
+    background-image: url('../images/waves.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-me {
+    background-image: url('../images/tiles.jpg');
+    background-size: cover;
+}
+
+/* Body */
+#introduction {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20em;
+    color: black;
+}
+
+#intro-background {
+    background-color:white;
+    opacity: 80%;
+    border-radius: 1.5em;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    opacity: 60%;
+    color: black;
+    background: white;
+}
