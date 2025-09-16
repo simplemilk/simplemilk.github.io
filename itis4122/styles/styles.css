@@ -1,8 +1,14 @@
 /* TO DO: Implement styles sheet for index.html */
 
 /* Backgrounds */
-.background {
+.index-background {
     background-image: url('../images/waves.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.static-background {
+    background-image: url('../images/reef.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,17 +19,32 @@
 }
 
 /* Body */
-#introduction {
+#default-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 20em;
+    padding: 2.5em;
     color: black;
 }
 
-#intro-background {
+#static-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+
+#background {
     background-color:white;
+    text-align: left;
+    padding: 1em;
+    margin: 0 15%;
     opacity: 80%;
     border-radius: 1.5em;
+    text-indent: 1.5em;
+}
+
+ul, ol {
+    padding-left: 3em;
+    margin-left: 0;
 }
 
 /* Navigation Bar */
@@ -32,14 +53,13 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color:black;
+    opacity: 70%;
+    border-radius: 1em;
 }
 
 nav li {
     float: left;
-}
-
-nav li:last-child {
-    border-right: none;
 }
 
 nav li a {
