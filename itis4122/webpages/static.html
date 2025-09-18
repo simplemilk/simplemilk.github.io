@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body class="static-background">
-    <nav>
+    <nav id="main-nav">
         <ul>
             <li style="float:right">
                 <a href="../index.html">Home</a>
@@ -19,8 +19,34 @@
     </nav>
     <div id="background">
         <span id ="static-body">
-                <h2>84.4% of the world's coral reef has been impacted by bleaching.<sup>1</sup></h2>
-                <p>Coral bleaching is a coral's response to environmental stress which results in expelling tiny algaes called <i>zooxanthellae</i> 
+                <h1>Project 1: Static Analysis of the Heat Levels in the Great Barrier Reefs</h1>
+            <nav class="table-of-contents">
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li>
+                        <a href="#stats">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#time-period">What time period is found to have the highest heat signature?</a>
+                    </li>
+                    <li>
+                        <a href="#north-south">Is there significant differences from the north vs southern section?</a>
+                    </li>
+                    <li>
+                         <a href="#bleaching">Can we identify where the bleaching occurs?</a>
+                    </li>
+                    <li>
+                        <a href="#conclusion">Conclusion</a>
+                    </li>
+                    <li>
+                        <a href="#citations">Citations</a>
+                    </li>
+                </ol>
+            </nav>
+                <h2 id="stats">Introduction</h2>
+                <p>
+                    84.4% of the world's coral reef has been impacted by bleaching.<sup>1</sup>
+                    Coral bleaching is a coral's response to environmental stress which results in expelling tiny algaes called <i>zooxanthellae</i> 
                     causing the coral turning white.<sup>2</sup></spu>
                     The algae is important and essential for corals as they help produce sugars for the corals to consume through photosynthesis and more than
                     90% of the corals food requirements come from these algae.<sup>2</sup>
@@ -45,35 +71,53 @@
                         What time period is found to have the highest amount of heat signature levels in the last five years?
                     </li>
                     <li>
-                        Are we able to find significant differences in heat signature in the northern front compared to the south?
+                        Are we able to find significant differences in heat signature in the northern compared to the south Great Barrier Reef?
                     </li>
                     <li>
-                        Can we identify how much degree heat week (DHW) units are required that caused significant bleaching in the great coral reefs?
+                        Can we identify which sections of the pacific ocean has coral bleaching?
                     </li>
                 </ol>
-                
-                <h3>
+                <h3 id="time-period">
                    What time period had the highest heat signature? 
                 </h3>
                 <p>
                     While looking at the data, there was a couple of things that stood out while analyzing the line graph for the temperature changes in the Great Barrier Reef.
-                    While observing the temperature changes, it can be noted that the temperature of the water changes drastically over time as it goes from the 
-                    <img src="../images/line_graph.jpg">
+                    While observing the temperature changes, it can be noted that the temperature of the water changes drastically based on season as the summer time for the southern hemisphere is from december - february.
+                    So looking at the graph there is indicaitons of increase temperatures at the start of the year then drastically decreases after it hits the fall season.
+                    However, the question would be is it consistently true in all regions of the map? So to test this we can check if there is a difference in the north and south coral reefs.
                 </p>
-
-                <h3>
+                    <img src="../images/line_graph.jpg" class="graph">
+                <h3 id="north-south">
                     Is there significant differences in the north and south temperatures?
-                    <img src="../images/double_bars.jpg">
                 </h3>
                 <p>
-
+                    Looking at the graph there seems to be a difference in regard to the overall temperature between the two regions of the Great Barrier Reef.
+                    When examining, it seems that the overall temperature in the northern regions seems to be over the general acceptable temperature resulting in higher chances of irreversible coral bleaching.
+                    When looking at the temperature for that of the southern region, looking at the drastic decrease in temperature, it could be potentially that the temperature decrease is mostly resulted from regions outside the north.
+                    So it can be stated that the north is potentially holding a significant amount of higher temperatures but to see a clearer view of this we can do a heat map.
                 </p>
-
-                <h3>
-                    Can we identify how much heat is required to cause significant bleaching in reefs?
-                    <img src="../images/hotspot.jpg">
+                    <img src="../images/double_bars.jpg" class="graph">
+                <h3 id="bleaching">
+                    Can we identify where bleaching occurs?
                 </h3>
-                <p>Citations</p>
+                <p>
+                    To an extent. Looking at how the heat map below, you can see where there are regions where there isn't much of an impact of coral bleaching on average but then when
+                    checking areas in the northern region you can see there are very deep colors of red on the edges.
+                    This could explain the significant high temperatures in the map especially in the top right portion.
+                    Whereas when checking the bottom portion we can see that there is the lighest portion, this could be potentially due it it being closer to the australian shore line.
+                    When the water hits the shoreline it has various factors that help with reducing the temperatures such as upwelling which is the process that helps with moving warm water away from the shore.<sup>5</sup>
+                    The reason in contrast why the shoreline of papa new guinea (the northern white blot) is warmer is due to it being closer to the equator as well which is generally the reason for warmer temperatures in that region.
+                </p>
+                    <img src="../images/hotspot.jpg" class="graph">
+                
+                <h3 id="conclusion"> Conclusion </h3>
+                <p>
+                    In conclusion, the data that can be interpreted is that when it comes to chances of irreversible coral bleaching is generally in the northern area in comparison to the southern reefs.
+                    THis could be potentially due to the cooling mechanisms from the sea shore helps reduce the amount of heat in the lower portion of the great barrier reef compared to the north.
+                    While the northern shoreline is due to it being closer to the equator.
+                    Thus it can be stated that it is potentially problematic for the coral reefs in this region to have such high temperatures and some changes are required to prevent further damages to the coral ecossystem.
+                </p>
+                <h3 id="citations">Citations</h3>
                 <ol>
                 <li>
                     <a href="https://coralreefwatch.noaa.gov/satellite/research/coral_bleaching_report.php">Current Global Bleaching: Status Update and Data Submissions</a>
@@ -86,11 +130,13 @@
                 </li>
                 <li>
                     <a href="https://coastwatch.noaa.gov/erddap/griddap/noaacrwhotspotDaily.html">ERDDAP at NOAA CoastWatch (data)</a>
-
+                </li>
+                <li>
+                    <a href="https://oceanservice.noaa.gov/education/tutorial_currents/03coastal4.html">Upwelling</a>
                 </li>
                 </ol>
         </span>
-    </div>
+</div>
 <script src="../javascript/javscript.js"></script>
 </body>
 <footer>

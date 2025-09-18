@@ -47,8 +47,18 @@ ul, ol {
     margin-left: 0;
 }
 
+/* Table of Contents */
+.table-of-contents {
+    width: 15 rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+
 /* Navigation Bar */
-nav ul {
+#main-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,11 +68,11 @@ nav ul {
     border-radius: 1em;
 }
 
-nav li {
+#main-nav li {
     float: left;
 }
 
-nav li a {
+#main-nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -70,8 +80,14 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
+#main-nav li a:hover {
     opacity: 60%;
     color: black;
     background: white;
+}
+
+/* Graph Size */
+.graph {
+    width: 50rem;
+    height: auto;
 }
