@@ -29,6 +29,8 @@
 #static-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -56,6 +58,30 @@ ul, ol {
     border-radius: 0.5rem;
 }
 
+#table-of-contents {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#table-of-contents ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#table-of-contents li {
+    margin: 5px 0;
+}
+
+#table-of-contents a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+#table-of-contents a:hover {
+    text-decoration: underline;
+}
 
 /* Navigation Bar */
 #main-nav ul {
@@ -90,4 +116,90 @@ ul, ol {
 .graph {
     width: 50rem;
     height: auto;
+}
+
+.graph:hover {
+    transform: scale(1.05);
+}
+
+.graph {
+    transition: transform 0.2s ease;
+}
+
+#temp-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+#temp-bar {
+    width: 100%;
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#temp-fill {
+    height: 100%;
+    transition: all 0.3s ease;
+    background: #44aa44;
+}
+
+button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0052a3;
+}
+
+/* Chart Container Styles */
+.chart-container {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 300px; /* Reduced minimum height */
+}
+
+.chart-container canvas {
+    position: relative !important;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Heatmap Chart Specific Styles */
+#heatmapChart {
+    position: relative;
+    width: 100%;
+    max-height: 450px; /* Reduced height */
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#heatmapChart canvas {
+    max-width: 600px !important; /* Match canvas width */
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Chart spacing and layout fixes */
+.chart-container:last-of-type {
+    margin-bottom: 40px;
+    clear: both;
 }

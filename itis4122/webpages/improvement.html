@@ -2,9 +2,10 @@
 <head>
     <html lang="en">
     <meta charset="UTF-8">
-    <title>Static Project</title>
+    <title>Improvement Project</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="static-background">
     <nav id="main-nav">
@@ -69,7 +70,11 @@
                     So looking at the graph there is indicaitons of increase temperatures at the start of the year then drastically decreases after it hits the fall season.
                     However, the question would be is it consistently true in all regions of the map? So to test this we can check if there is a difference in the north and south coral reefs.
                 </p>
-                    <img src="../images/line_graph.jpg" class="graph">
+                
+                <div class="chart-container">
+                    <canvas id="timeSeriesChart"></canvas>
+                </div>
+
                 <h3 id="north-south">
                     Is there significant differences in the north and south temperatures?
                 </h3>
@@ -79,7 +84,11 @@
                     When looking at the temperature for that of the southern region, looking at the drastic decrease in temperature, it could be potentially that the temperature decrease is mostly resulted from regions outside the north.
                     So it can be stated that the north is potentially holding a significant amount of higher temperatures but to see a clearer view of this we can do a heat map.
                 </p>
-                    <img src="../images/double_bars.jpg" class="graph">
+                
+                <div class="chart-container">
+                    <canvas id="northSouthChart"></canvas>
+                </div>
+
                 <h3 id="bleaching">
                     Can we identify where bleaching occurs?
                 </h3>
@@ -91,7 +100,10 @@
                     When the water hits the shoreline it has various factors that help with reducing the temperatures such as upwelling which is the process that helps with moving warm water away from the shore.<sup>5</sup>
                     The reason in contrast why the shoreline of papa new guinea (the northern white blot) is warmer is due to it being closer to the equator as well which is generally the reason for warmer temperatures in that region.
                 </p>
-                    <img src="../images/hotspot.jpg" class="graph">
+                
+                <div class="chart-container">
+                    <div id="heatmapChart"></div>
+                </div>
                 
                 <h3 id="conclusion"> Conclusion </h3>
                 <p>
@@ -119,8 +131,9 @@
                 </li>
                 </ol>
         </span>
-</div>
-<script src="../javascript/javscript.js"></script>
+    </div>
+    <script src="../javascript/javascript.js"></script>
+    <script src="../javascript/charts.js"></script>
 </body>
 <footer>
 </footer>
